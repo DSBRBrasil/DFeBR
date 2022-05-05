@@ -5,7 +5,7 @@ Componente desenvolvida em **C#** sob .net standard 2.0
 
 ## Como usar
 
-```
+```cs
         /// <summary>
         /// Obter dados de configuração
         /// </summary>
