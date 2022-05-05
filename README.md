@@ -1,11 +1,12 @@
-# Emissor_NFe
+# DFeBR - Emissor de Notas Fiscais Eletrônicas NFe
 
-[![GitHub license](https://img.shields.io/github/license/DSBRBrasil/Emissor_NFe?style=flat-square)](https://github.com/DSBRBrasil/Emissor_NFe/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/DSBRBrasil/Emissor_NFe?style=flat-square)](https://github.com/DSBRBrasil/Emissor_NFe/issues)
-[![GitHub forks](https://img.shields.io/github/forks/DSBRBrasil/Emissor_NFe?style=flat-square)](https://github.com/DSBRBrasil/Emissor_NFe/network)
+[![GitHub license](https://img.shields.io/github/license/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/issues)
+[![GitHub forks](https://img.shields.io/github/forks/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/network)
+[![GitHub stars](https://img.shields.io/github/stars/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/stargazers)
 
 
-Componente gratuito para Geração de NFe e NFCe 4.00
+Componente gratuito para Geração de NFe e NFCe versão 4.00
 
 Desenvolvido em **C#** sob .NET STANDARD 2.0
 
@@ -14,7 +15,13 @@ Construido para ser flexivel e escalável. Versão melhorada do projeto origem h
 
 ## Estado atual
 
-Completamente estável para transmissão de notas ao consumidor modelos 65 e 55
+Completamente **estável** para transmissão de notas ao consumidor modelos 65 e 55
+
+**Não há e nem pode haver** dependência de componentes **Pagos ou Trial**
+
+**DANFE** é gerada em formato string html, deixando a escolha do desenvolvedor usar este formato ou criar outro ao seu critério
+
+O programador pode **alterar os endpoints** através de arquivo de configuração, pois tais endereços não estão **hard coded** no código fonte
 
 
 ## Como usar
@@ -53,8 +60,9 @@ Completamente estável para transmissão de notas ao consumidor modelos 65 e 55
         }
 ```
 ## A Fazer 
-- [ ] CT-e - Conhecimento de Transporte Eletrônico :tada:
-- [ ] MDFe - Manifesto Eletrônico de Documentos Fiscais :tada:,
+- [ ] CT-e   - Conhecimento de Transporte Eletrônico :tada:
+- [ ] MDF-e  - Manifesto Eletrônico de Documentos Fiscais :tada:
+- [ ] CT-eOS - Conhecimento de Transporte Eletrônico para Outros Serviços (modelo 67) 
 
 
 ## Suporte
