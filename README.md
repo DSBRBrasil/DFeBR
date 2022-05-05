@@ -62,6 +62,7 @@ O programador pode **alterar os endpoints** através de arquivo de configuraçã
         }
 ```
 ## A Fazer 
+- [ ] Documento para carta de correção 
 - [ ] Inutilização de NFe - Conhecimento de Transporte Eletrônico :tada:
 - [ ] CT-e   - Conhecimento de Transporte Eletrônico :tada:
 - [ ] MDF-e  - Manifesto Eletrônico de Documentos Fiscais :tada:
