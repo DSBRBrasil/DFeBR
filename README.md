@@ -1,9 +1,13 @@
 # Emissor_NFe
+![GitHub](https://img.shields.io/github/license/dropbox/dropbox-sdk-java) 
+[![Build status](https://ci.appveyor.com/api/projects/status/7igb6s48sw2p95o3/branch/master?svg=true)](https://ci.appveyor.com/project/adeniltonbs/zeus-net-nfe-nfce/branch/master) 
+[![Issues](https://img.shields.io/github/issues/ZeusAutomacao/DFe.NET.svg?style=flat-square)](https://github.com/ZeusAutomacao/DFe.NET/issues)
 Componente gratuito para Geração de NFe e NFCe 4.00
 
 Desenvolvido em **C#** sob .NET STANDARD 2.0
 
-Construido para ser flexivel e escalável
+Construido para ser flexivel e escalável, trata-se de melhorias significativas em relação ao projeto origem 
+
 
 ## Estado atual
 
@@ -47,10 +51,16 @@ Completamente estável para transmissão de notas ao consumidor modelos 65 e 55
 ```
 ## A Fazer 
 - [ ] CT-e - Conhecimento de Transporte Eletrônico :tada:
-- [ ] MDFe - Manifesto Eletrônico de Documentos Fiscais :tada:
+- [ ] MDFe - Manifesto Eletrônico de Documentos Fiscais :tada:,
+
+
+## Suporte
+O uso deste componente não lhe da direito nem garantia de suporte gratuito.
+
+Contudo, há serviços de consultoria para o uso correto do componente para emissão de NFe e NFCe dentro do contexto de sua aplicação. Caso necessite de uma consultoria, por gentilieza, criar uma Issue e entraremos em contato o mais breve possível
 
 ## Contribuição
-Pull requests são bem vindos..
+Pull requests são bem vindos.
 
 ## Licença
 **LGPL** (https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License).
