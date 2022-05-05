@@ -60,10 +60,16 @@ O programador pode **alterar os endpoints** através de arquivo de configuraçã
         }
 ```
 ## A Fazer 
+- [ ] Inutilização de NFe - Conhecimento de Transporte Eletrônico :tada:
 - [ ] CT-e   - Conhecimento de Transporte Eletrônico :tada:
 - [ ] MDF-e  - Manifesto Eletrônico de Documentos Fiscais :tada:
 - [ ] CT-eOS - Conhecimento de Transporte Eletrônico para Outros Serviços (modelo 67) 
 
+## O que tem 
+- [x] Transmissão de NFe/NFCe versão 4.0
+- [x] Cancelamento de NFCe versão 4.0
+- [x] Consulta status do serviço (status do endpoint)
+- [x] Danfe em formato string html
 
 ## Suporte
 O uso deste componente **não lhe da direito nem garantia de suporte gratuito.**
