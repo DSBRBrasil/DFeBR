@@ -67,7 +67,6 @@ O programador pode **alterar os endpoints** através de arquivo de configuraçã
 
 ## Suporte
 O uso deste componente **não lhe da direito nem garantia de suporte gratuito.**
-
 Contudo, há serviços de consultoria para o uso correto do componente para emissão de NFe e NFCe dentro do contexto de sua aplicação. Caso necessite de uma consultoria, por gentilieza, criar uma [Issue](https://github.com/DSBRBrasil/Emissor_NFe/issues) e entraremos em contato o mais breve possível
 
 ## Contribuição
