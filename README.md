@@ -1,6 +1,11 @@
 # Emissor_NFe
 Componente gratuito para Geração de NFe e NFCe 4.00
+
 Componente desenvolvida em **C#** sob .net standard 2.0
+
+Construido para ser flexivel e escalável
+
+
 
 
 ## Como usar
