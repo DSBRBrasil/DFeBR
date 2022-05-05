@@ -5,7 +5,9 @@ Componente desenvolvida em **C#** sob .net standard 2.0
 
 Construido para ser flexivel e escalável
 
+## Estado atual
 
+Completamente estáve para transmissão de notas ao consumidor modelos 65 e 55
 
 
 ## Como usar
@@ -43,6 +45,9 @@ Construido para ser flexivel e escalável
             Assert.AreEqual(107, result.Retorno.cStat);
         }
 ```
+## A Fazer 
+- [ ] CT-e - Conhecimento de Transporte Eletrônico :tada:
+- [ ] MDFe - Manifesto Eletrônico de Documentos Fiscais :tada:
 
 ## Contribuição
 Pull requests são bem vindos..
