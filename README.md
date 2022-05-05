@@ -67,7 +67,7 @@ O programador pode **alterar os endpoints** através de arquivo de configuraçã
 - [ ] MDF-e  - Manifesto Eletrônico de Documentos Fiscais :tada:
 - [ ] CT-eOS - Conhecimento de Transporte Eletrônico para Outros Serviços (modelo 67) 
 
-## O que tem ?
+## O que o componente faz ?
 - [x] Transmissão de NFe/NFCe versão 4.0
 - [x] Cancelamento de NFCe versão 4.0
 - [x] Consulta status do serviço (status do endpoint)
