@@ -7,7 +7,7 @@ Construido para ser flexivel e escalável
 
 ## Estado atual
 
-Completamente estáve para transmissão de notas ao consumidor modelos 65 e 55
+Completamente estável para transmissão de notas ao consumidor modelos 65 e 55
 
 
 ## Como usar
