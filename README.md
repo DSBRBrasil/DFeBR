@@ -7,4 +7,4 @@ Componente desenvolvida em **C#** sob o.net standard 2.0
 Pull requests são bem vindos..
 
 ## Licença
-Licenciada sobre a **LGPL** (https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License).
+**LGPL** (https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License).
