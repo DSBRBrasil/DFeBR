@@ -12,6 +12,8 @@ Desenvolvido em **C#** sob .NET STANDARD 2.0
 
 Construido para ser flexivel e escalável. Versão melhorada do projeto origem https://github.com/ZeusAutomacao/DFe.NET
 
+Componente bem testado e utilizando em aplicação em **Produção**
+
 
 ## Estado atual
 
@@ -24,7 +26,7 @@ Completamente **estável** para transmissão de notas ao consumidor modelos 65 e
 O programador pode **alterar os endpoints** através de arquivo de configuração, pois tais endereços não estão **hard coded** no código fonte
 
 
-## Como usar
+## Como usar ?
 
 ```cs
         /// <summary>
@@ -65,7 +67,7 @@ O programador pode **alterar os endpoints** através de arquivo de configuraçã
 - [ ] MDF-e  - Manifesto Eletrônico de Documentos Fiscais :tada:
 - [ ] CT-eOS - Conhecimento de Transporte Eletrônico para Outros Serviços (modelo 67) 
 
-## O que tem 
+## O que tem ?
 - [x] Transmissão de NFe/NFCe versão 4.0
 - [x] Cancelamento de NFCe versão 4.0
 - [x] Consulta status do serviço (status do endpoint)
