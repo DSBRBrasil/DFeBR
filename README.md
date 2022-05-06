@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/issues)
 [![GitHub forks](https://img.shields.io/github/forks/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/network)
 [![GitHub stars](https://img.shields.io/github/stars/DSBRBrasil/DFeBR?style=flat-square)](https://github.com/DSBRBrasil/DFeBR/stargazers)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/DSBRBrasil/DFeBR)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/DSBRBrasil/DFeBR?style=flat-square)
 
 Componente gratuito para Geração de NFe e NFCe versão 4.00
 
