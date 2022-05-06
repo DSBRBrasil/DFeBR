@@ -1,0 +1,187 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Valnei Batista Filho</Authors>
+    <Product>EmissorNFe</Product>
+    <Description>Emissor de Notas Fiscais Eletrônica</Description>
+    <Version>2.11.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <ApplicationIcon />
+    <Win32Resource />
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <FileVersion>2.11.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Danfe\CFe\**" />
+    <Compile Remove="Danfe\ClosedCashierPDV\**" />
+    <Compile Remove="Danfe\Entidades\CashierPDV\**" />
+    <Compile Remove="Danfe\Entidades\CFeTaxInvoice\**" />
+    <Compile Remove="Danfe\Entidades\Inutilization\**" />
+    <Compile Remove="Danfe\Entidades\TaxInvoiceEvent\**" />
+    <Compile Remove="Danfe\Entidades\TaxInvoice\**" />
+    <Compile Remove="Danfe\Interfaces\lib\**" />
+    <EmbeddedResource Remove="Danfe\CFe\**" />
+    <EmbeddedResource Remove="Danfe\ClosedCashierPDV\**" />
+    <EmbeddedResource Remove="Danfe\Entidades\CashierPDV\**" />
+    <EmbeddedResource Remove="Danfe\Entidades\CFeTaxInvoice\**" />
+    <EmbeddedResource Remove="Danfe\Entidades\Inutilization\**" />
+    <EmbeddedResource Remove="Danfe\Entidades\TaxInvoiceEvent\**" />
+    <EmbeddedResource Remove="Danfe\Entidades\TaxInvoice\**" />
+    <EmbeddedResource Remove="Danfe\Interfaces\lib\**" />
+    <None Remove="Danfe\CFe\**" />
+    <None Remove="Danfe\ClosedCashierPDV\**" />
+    <None Remove="Danfe\Entidades\CashierPDV\**" />
+    <None Remove="Danfe\Entidades\CFeTaxInvoice\**" />
+    <None Remove="Danfe\Entidades\Inutilization\**" />
+    <None Remove="Danfe\Entidades\TaxInvoiceEvent\**" />
+    <None Remove="Danfe\Entidades\TaxInvoice\**" />
+    <None Remove="Danfe\Interfaces\lib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Danfe\Entidades\CabecalhoNFCe.cs" />
+    <Compile Remove="Danfe\Entidades\CabecalhoNFe.cs" />
+    <Compile Remove="Danfe\Entidades\CorpoNFCe.cs" />
+    <Compile Remove="Danfe\Entidades\ImpostosNFCe.cs" />
+    <Compile Remove="Danfe\Entidades\RodapeNFCe.cs" />
+    <Compile Remove="Danfe\Entidades\WebServiceNFe.cs" />
+    <Compile Remove="Danfe\HTMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\ICancellationXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\ICorrectionLetterXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IElementIdeXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IGeneratorXMLCFe`1.cs" />
+    <Compile Remove="Danfe\Interfaces\IICMSTaxXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IInutilizationXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IInvoiceXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IIPITaxXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IPaymentsXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IProductsXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IQrCodeXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\IRecipientAddressXMLGenerator.cs" />
+    <Compile Remove="Danfe\Interfaces\ISoapGeneratorService.cs" />
+    <Compile Remove="Danfe\Interfaces\ITotalsXMLGenerator.cs" />
+    <Compile Remove="Servicos\Templates\ConsultaTemplate.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="emissorsettings.json" />
+    <None Remove="NLog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="emissorsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetBarcode" Version="1.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+    <PackageReference Include="QRCoder" Version="1.3.5" />
+    <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Schemas\versao4.00\consReciNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\consSitNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\consStatServ_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\e110111_v1.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\envEventoCancNFe_v1.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\enviNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\eventoCancNFe_v1.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\inutNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\leiauteConsSitNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\leiauteConsStatServ_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\leiauteEventoCancNFe_v1.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\leiauteInutNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\leiauteNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\nfe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\procEventoCancNFe_v1.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\procInutNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\procNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\retConsReciNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\retConsSitNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\retConsStatServ_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\retEnvEventoCancNFe_v1.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\retEnviNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\retInutNFe_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\tiposBasico_v1.03.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\tiposBasico_v4.00.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Schemas\versao4.00\xmldsig-core-schema_v1.01.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
