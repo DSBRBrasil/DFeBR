@@ -79,7 +79,14 @@ O uso deste componente **não lhe da direito nem garantia de suporte gratuito.**
 Contudo, há serviços de consultoria para o uso correto do componente para emissão de NFe e NFCe dentro do contexto de sua aplicação. Caso necessite de uma consultoria, por gentilieza, criar uma [Issue](https://github.com/DSBRBrasil/Emissor_NFe/issues) e entraremos em contato o mais breve possível
 
 ## Contribuição
-Pull requests são bem vindos.
+Pull requests são bem vindos. Chamamos atenção a alguns princípios:
+
+- Princípio KISS - Keep It Simple, Stupid
+- Principio SOLID
+- Procure sempre extender o componente, logo não se deve mudar o Core da aplicação
+- Teste, Teste e Teste e prove que esta funcionando
+
+🏆 Pronto !, basta agora informar o motivo da melhoria ou o número da issue relacionada, e o meu muuuuito obrigado pela contribuição, TODOS nós ganharemos
 
 ## Licença
 **LGPL** (https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License).
