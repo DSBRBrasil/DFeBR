@@ -19,8 +19,6 @@ Componente bem testado e utilizando em aplicação em **Produção**
 
 Completamente **estável** para transmissão de notas ao consumidor modelos 65 e 55
 
-**Não há e nem pode haver** dependência de componentes **Pagos ou Trial**
-
 **DANFE** é gerada em formato string html, deixando a escolha do desenvolvedor usar este formato ou criar outro ao seu critério
 
 O programador pode **alterar os endpoints** através de arquivo de configuração, pois tais endereços não estão **hard coded** no código fonte
@@ -75,6 +73,7 @@ O programador pode **alterar os endpoints** através de arquivo de configuraçã
 ## O que o componente faz ?
 - [x] Transmissão de NFe/NFCe versão 4.0
 - [x] Cancelamento de NFCe versão 4.0
+- [x] Carta de Correção de NFCe versão 4.0
 - [x] Consulta status do serviço (status do endpoint)
 - [x] Danfe em formato string html
 
@@ -89,6 +88,7 @@ Pull requests são bem vindos. Chamamos atenção a alguns princípios:
 - Principio SOLID
 - Procure sempre extender o componente, logo não se deve mudar o Core da aplicação
 - Teste, Teste e Teste e prove que esta funcionando
+- Não há e nem pode haver dependência de componentes Pagos ou Trial
 
 🏆 Pronto !, basta agora informar o motivo da melhoria ou o número da issue relacionada, e o meu muuuuito obrigado pela contribuição, TODOS nós ganharemos
 
