@@ -10,7 +10,7 @@ Componente gratuito para Geração de NFe e NFCe versão 4.00
 
 Desenvolvido em **C#** sob .NET STANDARD 2.0
 
-Construido para ser flexivel e escalável. Versão melhorada do projeto origem https://github.com/ZeusAutomacao/DFe.NET
+Construido para ser flexivel e escalável. Versão compacta do projeto origem https://github.com/ZeusAutomacao/DFe.NET
 
 Componente bem testado e utilizando em aplicação em **Produção**
 
