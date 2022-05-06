@@ -25,6 +25,10 @@ Completamente **estável** para transmissão de notas ao consumidor modelos 65 e
 
 O programador pode **alterar os endpoints** através de arquivo de configuração, pois tais endereços não estão **hard coded** no código fonte
 
+## DANFE
+
+
+![danfe](https://user-images.githubusercontent.com/7658282/167130943-ee7ee981-b84f-4e92-9b39-418b3cafac19.png)
 
 ## Como usar ?
 
