@@ -367,7 +367,7 @@ namespace DFeBR.EmissorNFe.Servicos.Templates
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex, "Erro ao assinar arquivo Xml");
+                //Utils.TraceException(ex, "Erro ao assinar arquivo Xml");
                 throw new FalhaAssinaturaException("Erro ao assinar arquivo Xml", ex);
             }
         }
@@ -400,7 +400,7 @@ namespace DFeBR.EmissorNFe.Servicos.Templates
         private void ValidationEventHandler(object sender, ValidationEventArgs ex)
         {
             var msg = $"Erro ao validar xml contra Schema Xsd.\n{ex.Message}";
-            Utils.TraceException(ex.Exception, msg);
+            //Utils.TraceException(ex.Exception, msg);
             throw new FalhaValidacaoSchemaException(msg);
         }
 

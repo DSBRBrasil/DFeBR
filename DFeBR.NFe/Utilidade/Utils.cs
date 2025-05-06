@@ -33,7 +33,6 @@ using DFeBR.EmissorNFe.Utilidade.Entidades;
 using DFeBR.EmissorNFe.Utilidade.Exceptions;
 using DFeBR.EmissorNFe.Utilidade.Tipos;
 using Newtonsoft.Json;
-using NLog;
 
 #endregion
 
@@ -562,7 +561,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                TraceException(ex);
+                //TraceException(ex);
                 throw new Exception("Uma falha ocorreu ao enviar email", ex);
             }
         }
@@ -621,21 +620,21 @@ namespace DFeBR.EmissorNFe.Utilidade
         ///     Registra erros do sistema
         /// </summary>
         /// <param name="ex"></param>
-        public static void TraceException(Exception ex)
-        {
-            TraceException(ex, string.Empty);
-        }
+        //public static void TraceException(Exception ex)
+        //{
+        //    TraceException(ex, string.Empty);
+        //}
 
         /// <summary>
         ///     Registra erros do sistema
         /// </summary>
         /// <param name="ex">Um Exception</param>
         /// <param name="msg">Uma mensagem adicional</param>
-        public static void TraceException(Exception ex, string msg)
-        {
-            var logger = LogManager.GetCurrentClassLogger();
-            logger.Error(ex, msg);
-        }
+        //public static void TraceException(Exception ex, string msg)
+        //{
+        //    var logger = LogManager.GetCurrentClassLogger();
+        //    logger.Error(ex, msg);
+        //}
 
         /// <summary>
         ///     Obter lista de erros gravados
@@ -667,7 +666,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             {
                 // Limpar arquivos de erros para poder obter dados da proxima vez...
                 DelatarArquivo(CaminhoLog, NomeArqErrorLog);
-                TraceException(ex);
+                //TraceException(ex);
 
                 // Deserializa
                 return new List<ErrorTrace>();
@@ -1263,7 +1262,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                TraceException(ex);
+                //TraceException(ex);
                 return DateTime.Now;
 
             }
