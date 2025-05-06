@@ -304,7 +304,7 @@ namespace DFeBR.EmissorNFe.Servicos.Templates
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex, "Erro ao assinar arquivo Xml");
+                //Utils.TraceException(ex, "Erro ao assinar arquivo Xml");
                 throw new FalhaAssinaturaException("Erro ao assinar arquivo Xml", ex);
             }
         }

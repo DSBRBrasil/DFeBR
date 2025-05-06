@@ -56,7 +56,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex);
+                //Utils.TraceException(ex);
                 throw new FalhaCertificadoDigitalException("Falha ao listar certificados digitais",ex);
             }
         }
@@ -91,7 +91,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex);
+                //Utils.TraceException(ex);
                 throw new FalhaCertificadoDigitalException("Falha ao listar certificados digitais", ex);
             }
            
@@ -149,7 +149,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex);
+                //Utils.TraceException(ex);
                 throw new FalhaCertificadoDigitalException("Não foi possivel converter o stream para o certificado.", ex); 
             }
         }
@@ -181,7 +181,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex);
+                //Utils.TraceException(ex);
                 throw new FalhaCertificadoDigitalException("Não foi possivel obter certificado digital do repositorio.", ex);
             }
             finally

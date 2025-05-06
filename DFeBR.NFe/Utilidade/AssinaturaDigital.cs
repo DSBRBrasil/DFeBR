@@ -70,7 +70,7 @@ namespace DFeBR.EmissorNFe.Utilidade
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex);
+                //Utils.TraceException(ex);
                 throw new FalhaAssinaturaException("Erro ao assinar arquivo Xml", ex);
             }
         }

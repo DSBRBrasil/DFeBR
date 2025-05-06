@@ -5,12 +5,13 @@
     <Authors>Valnei Batista Filho</Authors>
     <Product>EmissorNFe</Product>
     <Description>Emissor de Notas Fiscais Eletrônica</Description>
-    <Version>2.11.0</Version>
+    <Version>2.12.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <ApplicationIcon />
     <Win32Resource />
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <FileVersion>2.11.0.0</FileVersion>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+    <FileVersion>2.12.0.0</FileVersion>
+    <UserSecretsId>b1e8d65b-0293-42af-a159-ead0df8a0660</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -80,12 +81,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NetBarcode" Version="1.0.7" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Include="NLog" Version="4.7.0" />
-    <PackageReference Include="QRCoder" Version="1.3.5" />
+    <PackageReference Include="NetBarcode" Version="1.8.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="QRCoder" Version="1.6.0" />
     <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
-    <PackageReference Include="System.Security.Cryptography.Xml" Version="4.5.0" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>

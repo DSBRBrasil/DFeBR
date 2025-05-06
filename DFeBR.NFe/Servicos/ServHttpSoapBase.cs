@@ -127,19 +127,19 @@ namespace DFeBR.EmissorNFe.Servicos
                 if (_response == null)
                 {
                     msg = $"Falha de comunicação ao executar o serviço {_nomeServico}";
-                    Utils.TraceException(ex, msg);
+                    //Utils.TraceException(ex, msg);
                     throw new FalhaComunicacaoException(msg, ex);
                 }
 
                 if (_response.StatusCode == HttpStatusCode.RequestTimeout)
                 {
                     msg = $"Falha de comunicação ao executar o serviço {_nomeServico}";
-                    Utils.TraceException(ex, msg);
+                    //Utils.TraceException(ex, msg);
                     throw new FalhaComunicacaoException(msg, ex);
                 }
 
                 msg = $"Falha ao executar o serviço {_nomeServico}";
-                Utils.TraceException(ex, msg);
+                //Utils.TraceException(ex, msg);
                 throw new FalhaCriacaoServicoWebException(msg, ex);
             }
         }

@@ -186,7 +186,7 @@ namespace DFeBR.EmissorNFe.Dominio.NotaFiscalEletronica.Configurar
             }
             catch (Exception ex)
             {
-                Utils.TraceException(ex);
+                //Utils.TraceException(ex);
                 throw new InvalidOperationException($"Não foi possível encontrar ou processar o arquivo {nomeArq}");
             }
         }
